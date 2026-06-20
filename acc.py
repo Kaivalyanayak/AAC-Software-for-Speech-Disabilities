@@ -1,23 +1,3 @@
-"""
-AAC Communication Software (visual redesign)
----------------------------------------------
-Same offline-first, non-blocking, race-free engine as before, with a
-calmer, more aesthetically considered Tkinter interface:
-
-- A 2x2 grid of color-coded "cards" for the built-in categories
-  (rounded rectangles drawn on Canvas, since plain tk.Button can't do
-  rounded corners) instead of a stacked list of identical blue buttons.
-- A muted, warm palette instead of saturated primary colors everywhere.
-- Small glyph icons next to each category and phrase row for quicker
-  visual recognition.
-- A clearly distinct, lower-key "Stop" control next to (not competing
-  with) the red Emergency button.
-- A "currently speaking" highlight on whichever phrase is playing.
-
-Everything from the previous version is preserved: offline audio caching,
-non-blocking playback via root.after polling, unique content-hashed temp
-files, deletable custom phrases, and graceful offline fallback messages.
-"""
 
 import tkinter as tk
 from tkinter import messagebox
